@@ -7,7 +7,8 @@ export default function Nav() {
   
     <ul className='list-none flex text-white'>
         <a href="#" className='m-3 p-2 mx-5 sm:mx-8 font-bold'>Logo</a>
-        <li className='m-3 p-2' ><a href="#"> Home</a></li>
+        <li className='m-3 p-2' ><a
+         href="#"> Home</a></li>
         <li className='m-3 p-2' ><a href="#">Blog</a></li>
         <li className='m-3 p-2' ><a href="#">About Us</a></li>
         <li className='m-3 p-2' ><a href="#">Contact us</a></li>
