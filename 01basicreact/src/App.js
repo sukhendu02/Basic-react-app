@@ -2,8 +2,10 @@
 import './App.css';
 
 import Nav from './components/Nav.jsx'
+import Home from './components/Home.jsx'
 import Contact from './components/Contact.jsx'
-import blog from './components/blog.jsx'
+import About from './components/About.jsx'
+import Blog from './components/Blog.jsx'
 
 import {
   BrowserRouter as Router,
@@ -17,18 +19,15 @@ import {
 function App() {
   return (
    <> 
-      <Routes>
-    <Nav/>
-      <Route path="/" component={<home />} />
-      <Route path="/contact" component={<contact />}>
-        
-        <Route path="/blog" component={<blog />} />
-      </Route>
-    </Routes> 
+        <Nav/>
+      <div>
+    <Routes>        
+      <Route path="/"  element={<Home/>} />
+      <Route path="/blog"  element={<Blog />}/>
+      <Route path="/about"  element={<About/>}/>
+    </Routes>
+    </div>
 
-   
-
-    
    
    </>
   );
